@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagora's calculator</title>
+</head>
+<body>
+    <h1 id="teste">Teorema de Pitágoras</h1>
+    <h2>Calcule o valor de um lado de um triângulo retângulo. Escolha dois lados do triângulo e dê-lhes suas medidas: </h2>
+    <div class="container">
+        <form id="formValues" onsubmit="calculateSide()">
+            <div class="upperBody">
+                <input type="number" id="triangleSide1">
+                <div class="rectangle"></div>
+                <input type="number" id="hypotenuse">
+            </div>
+            <div class="lowerBody">
+                <input type="number" id="triangleSide2">
+            </div>
+            <input type="submit" value="Calcular" style="text-align: center; width: 100px; height: 50px;">
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
